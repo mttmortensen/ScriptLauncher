@@ -35,9 +35,9 @@
             // 
             button1.Location = new Point(12, 12);
             button1.Name = "button1";
-            button1.Size = new Size(153, 29);
+            button1.Size = new Size(197, 29);
             button1.TabIndex = 0;
-            button1.Text = "Tag Asset in Qualys";
+            button1.Text = "Get \"Enabled\" AD Users";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
