@@ -9,14 +9,14 @@ namespace ScriptLauncher
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void get_EnabledADUSers(object sender, EventArgs e)
         {
             // 1. Create process settings 
             ProcessStartInfo psi = new ProcessStartInfo();
             psi.FileName = "powershell.exe";
 
             // 2. Script Path from OneDrive
-            psi.Arguments = "-ExecutionPolicy Bypas -File \"C:\\Users\\mattm\\OneDrive - 4Life Research\\Documents\\Scripts\\CountUsers.ps1\"";
+            psi.Arguments = "-NoProfile -ExecutionPolicy Bypass -Command \"& 'C:\\Users\\mattm\\OneDrive - 4Life Research\\Documents\\Scripts\\CountUsers.ps1'\"";
 
             // 3. Quiet Execution (no black window pop up)
             psi.UseShellExecute = false;

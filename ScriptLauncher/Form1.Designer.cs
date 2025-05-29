@@ -39,7 +39,7 @@
             button1.TabIndex = 0;
             button1.Text = "Get \"Enabled\" AD Users";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button1.Click += get_EnabledADUSers;
             // 
             // Form1
             // 
