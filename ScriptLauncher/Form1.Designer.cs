@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -41,11 +42,22 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += get_EnabledADUSers;
             // 
+            // button2
+            // 
+            button2.Location = new Point(12, 47);
+            button2.Name = "button2";
+            button2.Size = new Size(197, 29);
+            button2.TabIndex = 1;
+            button2.Text = "Get AD Servers";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += get_ADServers;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(444, 448);
+            Controls.Add(button2);
             Controls.Add(button1);
             Name = "Form1";
             Text = "Script Launcher";
@@ -55,5 +67,6 @@
         #endregion
 
         private Button button1;
+        private Button button2;
     }
 }
