@@ -51,12 +51,17 @@ namespace ScriptLauncher
 
         private void get_ADServers(object sender, EventArgs e)
         {
+            
+        }
+
+        private void OutPut(string filePath) 
+        {
             // 1. Create process settings 
             ProcessStartInfo psi = new ProcessStartInfo();
             psi.FileName = "powershell.exe";
 
             // 2. Script Path from OneDrive
-            psi.Arguments = "-NoProfile -ExecutionPolicy Bypass -Command \"& 'C:\\Users\\mattm\\Documents\\Scripts\\WF\\Get_AD_Servers.ps1'\"";
+            psi.Arguments = $"-NoProfile -ExecutionPolicy Bypass -Command \"& 'C:\\Users\\mattm\\Documents\\Scripts\\WF\\Get_AD_Servers.ps1'\"";
 
             // 3. Quiet Execution (no black window pop up)
             psi.UseShellExecute = false;
