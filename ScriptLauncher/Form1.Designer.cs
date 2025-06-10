@@ -33,8 +33,10 @@
             tabControl = new TabControl();
             SysAdminTools = new TabPage();
             QualysTools = new TabPage();
+            button3 = new Button();
             tabControl.SuspendLayout();
             SysAdminTools.SuspendLayout();
+            QualysTools.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -82,6 +84,7 @@
             // 
             // QualysTools
             // 
+            QualysTools.Controls.Add(button3);
             QualysTools.Location = new Point(4, 29);
             QualysTools.Name = "QualysTools";
             QualysTools.Padding = new Padding(3);
@@ -89,6 +92,15 @@
             QualysTools.TabIndex = 1;
             QualysTools.Text = "Qualys";
             QualysTools.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(0, 6);
+            button3.Name = "button3";
+            button3.Size = new Size(279, 29);
+            button3.TabIndex = 0;
+            button3.Text = "Get Number of Qualys CloudAgents";
+            button3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -100,6 +112,7 @@
             Text = "Script Launcher";
             tabControl.ResumeLayout(false);
             SysAdminTools.ResumeLayout(false);
+            QualysTools.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -110,5 +123,6 @@
         private TabControl tabControl;
         private TabPage SysAdminTools;
         private TabPage QualysTools;
+        private Button button3;
     }
 }
