@@ -34,6 +34,7 @@
             SysAdminTools = new TabPage();
             QualysTools = new TabPage();
             button3 = new Button();
+            button4 = new Button();
             tabControl.SuspendLayout();
             SysAdminTools.SuspendLayout();
             QualysTools.SuspendLayout();
@@ -84,6 +85,7 @@
             // 
             // QualysTools
             // 
+            QualysTools.Controls.Add(button4);
             QualysTools.Controls.Add(button3);
             QualysTools.Location = new Point(4, 29);
             QualysTools.Name = "QualysTools";
@@ -97,10 +99,19 @@
             // 
             button3.Location = new Point(0, 6);
             button3.Name = "button3";
-            button3.Size = new Size(279, 29);
+            button3.Size = new Size(231, 29);
             button3.TabIndex = 0;
-            button3.Text = "Get Number of Qualys CloudAgents";
+            button3.Text = "Get Number of CloudAgents";
             button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(0, 41);
+            button4.Name = "button4";
+            button4.Size = new Size(231, 29);
+            button4.TabIndex = 1;
+            button4.Text = "Install CloudAgents";
+            button4.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -124,5 +135,6 @@
         private TabPage SysAdminTools;
         private TabPage QualysTools;
         private Button button3;
+        private Button button4;
     }
 }
