@@ -33,8 +33,9 @@
             tabControl = new TabControl();
             SysAdminTools = new TabPage();
             QualysTools = new TabPage();
-            button3 = new Button();
             button4 = new Button();
+            button3 = new Button();
+            XcitiumTools = new TabPage();
             tabControl.SuspendLayout();
             SysAdminTools.SuspendLayout();
             QualysTools.SuspendLayout();
@@ -64,6 +65,7 @@
             // 
             tabControl.Controls.Add(SysAdminTools);
             tabControl.Controls.Add(QualysTools);
+            tabControl.Controls.Add(XcitiumTools);
             tabControl.Dock = DockStyle.Fill;
             tabControl.Location = new Point(0, 0);
             tabControl.Name = "tabControl";
@@ -95,15 +97,6 @@
             QualysTools.Text = "Qualys";
             QualysTools.UseVisualStyleBackColor = true;
             // 
-            // button3
-            // 
-            button3.Location = new Point(0, 6);
-            button3.Name = "button3";
-            button3.Size = new Size(231, 29);
-            button3.TabIndex = 0;
-            button3.Text = "Get Number of CloudAgents";
-            button3.UseVisualStyleBackColor = true;
-            // 
             // button4
             // 
             button4.Location = new Point(0, 41);
@@ -112,6 +105,26 @@
             button4.TabIndex = 1;
             button4.Text = "Install CloudAgents";
             button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(0, 6);
+            button3.Name = "button3";
+            button3.Size = new Size(231, 29);
+            button3.TabIndex = 0;
+            button3.Text = "Get Number of CloudAgents";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += getQualysCloudAgentCount;
+            // 
+            // XcitiumTools
+            // 
+            XcitiumTools.Location = new Point(4, 29);
+            XcitiumTools.Name = "XcitiumTools";
+            XcitiumTools.Padding = new Padding(3);
+            XcitiumTools.Size = new Size(436, 415);
+            XcitiumTools.TabIndex = 2;
+            XcitiumTools.Text = "Xcitium";
+            XcitiumTools.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -136,5 +149,6 @@
         private TabPage QualysTools;
         private Button button3;
         private Button button4;
+        private TabPage XcitiumTools;
     }
 }

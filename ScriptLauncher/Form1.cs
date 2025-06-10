@@ -19,7 +19,12 @@ namespace ScriptLauncher
             OutPut("C:\\Users\\mattm\\Documents\\Scripts\\WF\\Get_AD_Servers.ps1");
         }
 
-        private void OutPut(string filePath) 
+        private void getQualysCloudAgentCount(object sender, EventArgs e)
+        {
+            OutPut("C:\\Users\\mattm\\Documents\\Scripts\\WF\\Get_Qualys_CloudAgents.ps1");
+        }
+
+        private void OutPut(string filePath)
         {
             // 1. Create process settings 
             ProcessStartInfo psi = new ProcessStartInfo();
@@ -57,5 +62,7 @@ namespace ScriptLauncher
                 MessageBox.Show($"Done!\n {output}");
             }
         }
+
+
     }
 }
